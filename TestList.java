@@ -2,18 +2,20 @@ public class TestList {
     public static void main(String[] args) {
         MyList list = new MyList();
 
-        list.add(2);
-        list.add(2);
-        list.add(3);
-        list.add(5);
-        list.add(5);
-        list.add(7);
+        list.endadd(1);
+        list.endadd(2);
+        list.endadd(3);
+        list.endadd(4);
+        list.endadd(5);
+        list.endadd(6);
 
         //list.print();
 
         //list.remove(2);
+        //list.remove(1);
 
         list.print();
+        System.out.println("Всего элементов в списке = "+list.getLenght());
         
     }
 }
