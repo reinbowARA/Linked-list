@@ -86,7 +86,6 @@ public class MyList {
 
     public void removeALL() {
         Node currentNode = head;
-        Node previousNode = null;
 
         while (currentNode.next != null){
             currentNode = currentNode.next;
