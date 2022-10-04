@@ -41,14 +41,6 @@ public class MyList {
         }
         currentNode.next = newNode;
     }
-
-    public boolean delete(Node delnode) {
-        if (delnode == null || delnode.next == null) {
-            return false;
-        }
-        delnode = delnode.next;
-        return true;
-    }
     
     public void remove(int data) {
         Node currentNode = head;
@@ -81,6 +73,7 @@ public class MyList {
             System.out.println(currentNode.data);
         }
     }
+
     public int getLenght() {
         Node walkPointer = head;
         while(walkPointer.next != null)
@@ -89,5 +82,16 @@ public class MyList {
             length++;
         }
         return length;
+    }
+
+    public void removeALL() {
+        Node currentNode = head;
+        Node previousNode = null;
+
+        while (currentNode.next != null){
+            currentNode = currentNode.next;
+            currentNode.data = 0;
+        }
+        remove(0);
     }
 }

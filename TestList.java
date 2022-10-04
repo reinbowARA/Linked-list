@@ -12,10 +12,12 @@ public class TestList {
         //list.print();
 
         //list.remove(2);
-        //list.remove(1);
+        list.remove(1);
 
         list.print();
         System.out.println("Всего элементов в списке = "+list.getLenght());
-        
+        list.removeALL();
+        list.print();
+        System.out.println(list.getLenght());
     }
 }
